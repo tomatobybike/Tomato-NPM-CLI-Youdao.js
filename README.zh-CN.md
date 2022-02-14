@@ -9,21 +9,26 @@ $ yarn gloabl add youdaotom
 
 ```
 
-## 配置软连接
-
-```sh
-yarn link
-
-```
-
 ## 使用
 
 ```sh
-youdao query hello
+youdaotom query hello
 ```
 
 ## 简写
 
 ```sh
-youdao  hello
+youdaotom  hello
+```
+
+## 命令行配置 youdao api key 和 keyfrom
+
+具体的 api key 和 keyfrom 申请 参考
+
+http://fanyi.youdao.com/openapi?path=data-mode
+
+本身已经配置了默认key和keyfrom，已经足够用了
+
+```sh
+youdaotom set -key 'xxx' -keyfrom 'xxx'
 ```

@@ -17,21 +17,18 @@ yarn add youdaotom
 
 ## Usage
 
-## config syslink
-
 ```sh
-yarn link
-
+youdaotom query hello
 ```
 
-## 使用
+## short cmd
 
 ```sh
-youdao query hello
+youdaotom  hello
 ```
 
-## 或者简写
+## set key and fromkey
 
 ```sh
-youdao  hello
+youdaotom set -key 'xxx' -keyfrom 'xxx'
 ```
