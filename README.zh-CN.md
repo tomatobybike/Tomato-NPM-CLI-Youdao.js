@@ -9,7 +9,7 @@
 ## Install global
 
 ```
-$ yarn gloabl add youdaotom
+$ yarn global add youdaotom
 
 ```
 
