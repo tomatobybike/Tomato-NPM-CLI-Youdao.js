@@ -46,7 +46,6 @@ program
     .command('query', { isDefault: true })
     .description('translate query')
     .action((cmd, obj) => {
-        // console.log('obj', obj)
         let word = obj.args?.join(' ')
         superagent
             .get(url)
