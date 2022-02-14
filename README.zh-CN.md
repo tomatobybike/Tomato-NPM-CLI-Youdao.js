@@ -1,23 +1,15 @@
-English | [简体中文](./README.zh-CN.md)
+简体中文 | [English](./README.md)
 
 # 配置 node 命令行有道翻译
 
-## Install
+## Install global
 
 ```
 $ yarn gloabl add youdaotom
 
 ```
 
-## Or install
-
-```
-yarn add youdaotom
-```
-
-## Usage
-
-## config syslink
+## 配置软连接
 
 ```sh
 yarn link
@@ -30,7 +22,7 @@ yarn link
 youdao query hello
 ```
 
-## 或者简写
+## 简写
 
 ```sh
 youdao  hello

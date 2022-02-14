@@ -1,9 +1,20 @@
 {
     "name": "youdaotom",
     "version": "1.0.0",
+    "description": "youdao translate, 翻译 命令行",
+    "keywords": [
+        "translate",
+        "yudao",
+        "翻译",
+        "youdaotom"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js"
+    },
     "license": "MIT",
-    "author": "Tom",
-    "main": "index.js",
+    "author": "Tom <tomatobybike@gmail.com>",
+    "main": "./src/youdao.js",
     "bin": {
         "youdaotom": "./bin/www"
     },
@@ -33,5 +44,8 @@
         "eslint-plugin-prettier": "^4.0.0",
         "husky": "^7.0.2",
         "prettier": "^2.4.1"
+    },
+    "engines": {
+        "node": "^12.13.0 || ^14.15.0 || >=16"
     }
 }
