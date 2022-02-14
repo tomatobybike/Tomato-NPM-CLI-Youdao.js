@@ -2,6 +2,10 @@ English | [简体中文](./README.zh-CN.md)
 
 # 配置 node 命令行有道翻译
 
+
+
+![](https://github.com/tomatobybike/Tomato-Drawing/blob/main/youdaotom.jpg?raw=true)
+
 ## Install
 
 ```

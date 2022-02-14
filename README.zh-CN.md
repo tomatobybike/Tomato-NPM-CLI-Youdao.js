@@ -2,6 +2,10 @@
 
 # 配置 node 命令行有道翻译
 
+
+
+![](https://github.com/tomatobybike/Tomato-Drawing/blob/main/youdaotom.jpg?raw=true)
+
 ## Install global
 
 ```
