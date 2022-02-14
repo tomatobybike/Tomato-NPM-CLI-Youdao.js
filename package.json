@@ -1,6 +1,6 @@
 {
     "name": "youdaotom",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
@@ -19,6 +19,7 @@
         "youdaotom": "./bin/www"
     },
     "scripts": {
+        "release": "standard-version",
         "start": "node ./src/youdao.js"
     },
     "dependencies": {
@@ -43,7 +44,8 @@
         "eslint-plugin-import": "^2.24.2",
         "eslint-plugin-prettier": "^4.0.0",
         "husky": "^7.0.2",
-        "prettier": "^2.4.1"
+        "prettier": "^2.4.1",
+        "standard-version": "^9.3.2"
     },
     "engines": {
         "node": "^12.13.0 || ^14.15.0 || >=16"
