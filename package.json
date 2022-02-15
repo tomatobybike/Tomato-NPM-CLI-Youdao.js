@@ -4,9 +4,14 @@
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
+        "youdao",
         "yudao",
         "翻译",
-        "youdaotom"
+        "命令行",
+        "cli",
+        "youdaotom",
+        "chinese",
+        "english"
     ],
     "repository": {
         "type": "git",
