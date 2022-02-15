@@ -1,6 +1,6 @@
 {
     "name": "youdaotom",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
@@ -40,7 +40,7 @@
         "json2ts": "^0.0.7",
         "ora": "^5.4.1",
         "shelljs": "^0.8.4",
-        "superagent": "^6.1.0"
+        "superagent": "^7.1.1"
     },
     "devDependencies": {
         "eslint": "^7.32.0",
