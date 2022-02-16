@@ -1,6 +1,6 @@
 {
     "name": "youdaotom",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
@@ -34,12 +34,8 @@
         "cli-table2": "^0.2.0",
         "commander": "^8.2.0",
         "configstore": "3.1.5",
-        "download-git-repo": "^3.0.2",
         "figlet": "^1.5.2",
-        "inquirer": "^8.2.0",
-        "json2ts": "^0.0.7",
         "ora": "^5.4.1",
-        "shelljs": "^0.8.4",
         "superagent": "^7.1.1"
     },
     "devDependencies": {
