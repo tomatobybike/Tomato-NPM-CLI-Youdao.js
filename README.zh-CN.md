@@ -31,7 +31,7 @@ http://fanyi.youdao.com/openapi?path=data-mode
 
 本身已经配置了默认 key 和 keyfrom，已经足够用了
 
-<font color="#FF0000">注意，如果网易有道翻译的 api 接口调用过于频繁，会被网易禁用。可以使用如下命令，更改为你自己的 key 和 keyfrom</font>
+**<font color="#FF0000">注意，如果网易有道翻译的 api 接口调用过于频繁，会被网易禁用。可以使用如下命令，更改为你自己的 key 和 keyfrom</font>**
 
 ```sh
 youdaotom set -key 'xxx' -keyfrom 'xxx'
