@@ -46,7 +46,7 @@ program
     .command('query', { isDefault: true })
     .description('translate query')
     .action((cmd, obj) => {
-        let word = obj.args?.join(' ')
+        const word = obj.args ? obj.args.join(' ') : ''
         superagent
             .get(url)
             .query({
@@ -57,19 +57,19 @@ program
                     console.log('excuse me, try again')
                     return false
                 }
-                let data = JSON.parse(res.text)
-                let result = {}
+                const data = JSON.parse(res.text)
+                const result = {}
                 // 返回的数据处理
                 if (data.basic) {
-                    result[word] = data['basic']['explains']
+                    result[word] = data.basic.explains
                 } else if (data.translation) {
-                    result[word] = data['translation']
+                    result[word] = data.translation
                 } else {
                     console.error('error')
                 }
                 console.log()
                 // 输出表格
-                let table = new Table()
+                const table = new Table()
                 table.push(result)
                 console.log(table.toString())
             })
