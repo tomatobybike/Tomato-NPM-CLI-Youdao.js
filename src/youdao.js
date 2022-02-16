@@ -6,6 +6,7 @@ const superagent = require('superagent') // http请求
 const Printer = require('@darkobits/lolcatjs')
 const figlet = require('figlet')
 const Configstore = require('configstore')
+const chalk = require('chalk')
 const conf = new Configstore('youdaoTom')
 
 const DEFAULT_API_KEYS = {
@@ -23,6 +24,15 @@ const logo = figlet.textSync('Youdao')
 const logoPrinter = Printer.fromString(
     `\n=========================================   \n 汤姆的youdao翻译${VERSION}\n\n${logo}\n=========================================`
 )
+
+const validJSON = (json) => {
+    try {
+        JSON.parse(json)
+        return true
+    } catch (err) {
+        return false
+    }
+}
 
 program
     .allowUnknownOption()
@@ -57,21 +67,41 @@ program
                     console.log('excuse me, try again')
                     return false
                 }
-                const data = JSON.parse(res.text)
-                const result = {}
-                // 返回的数据处理
-                if (data.basic) {
-                    result[word] = data.basic.explains
-                } else if (data.translation) {
-                    result[word] = data.translation
-                } else {
-                    console.error('error')
+
+                try {
+                    if (!validJSON(res.text)) {
+                        console.log(`\n ${chalk.red('有道翻译API出错信息:')}`)
+                        console.log(
+                            `\n${'💔'.repeat(
+                                3
+                            )}来自您key的翻译API请求异常频繁，为保护其他用户的正常访问，只能暂时禁止您目前key的访问\n`
+                        )
+
+                        console.log(
+                            `\n你可以使用 ${chalk.red(
+                                'youdaotom set -key xxx -keyfrom yyy'
+                            )} 命令来配置你自己在网易申请的key和keyfrom\n`
+                        )
+                        return false
+                    }
+                    const data = JSON.parse(res.text)
+                    const result = {}
+                    // 返回的数据处理
+                    if (data.basic) {
+                        result[word] = data.basic.explains
+                    } else if (data.translation) {
+                        result[word] = data.translation
+                    } else {
+                        console.error('error')
+                    }
+                    console.log()
+                    // 输出表格
+                    const table = new Table()
+                    table.push(result)
+                    console.log(table.toString())
+                } catch (error) {
+                    console.log(error.toString())
                 }
-                console.log()
-                // 输出表格
-                const table = new Table()
-                table.push(result)
-                console.log(table.toString())
             })
     })
 if (!process.argv[2]) {
