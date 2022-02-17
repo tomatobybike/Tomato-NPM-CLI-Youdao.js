@@ -80,7 +80,7 @@ program
                         console.log(
                             `\n你可以使用 ${chalk.red(
                                 'youdaotom set -key xxx -keyfrom yyy'
-                            )} 命令来配置你自己在网易申请的key和keyfrom\n`
+                            )} 命令来配置你自己在网易申请的key和keyfrom,或者几个小时后再尝试，随着本npm包下载的用户数越多，很容易超出网易的限制\n`
                         )
                         return false
                     }
