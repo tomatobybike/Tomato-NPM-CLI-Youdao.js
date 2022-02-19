@@ -1,5 +1,5 @@
 // #!/usr/bin/env node
-// 自己实现命令行有道翻译
+// 命令行有道翻译
 const { program } = require('commander')
 const Table = require('cli-table2') // 表格输出
 const superagent = require('superagent') // http请求
@@ -7,6 +7,7 @@ const Printer = require('@darkobits/lolcatjs')
 const figlet = require('figlet')
 const Configstore = require('configstore')
 const chalk = require('chalk')
+
 const conf = new Configstore('youdaoTom')
 
 const DEFAULT_API_KEYS = {
@@ -56,7 +57,7 @@ program
     .command('query', { isDefault: true })
     .description('translate query')
     .action((cmd, obj) => {
-        const word = obj.args ? obj.args.join(' ') : ''
+        const word = obj.args?.join(' ')
         superagent
             .get(url)
             .query({

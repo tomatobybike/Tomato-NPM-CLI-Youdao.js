@@ -4,5 +4,7 @@
     "trailingComma": "none",
     "tabWidth": 4,
     "semi": false,
+    "importOrder": [],
+    "importOrderSeparation": true,
     "singleQuote": true
 }

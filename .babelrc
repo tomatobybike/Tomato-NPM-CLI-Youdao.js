@@ -1,0 +1,13 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            // babel打包为es6
+            {
+                "targets": {
+                    "esmodules": true
+                }
+            }
+        ]
+    ]
+}
