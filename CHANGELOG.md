@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.6...v2.0.0) (2022-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🧨 eslintrc.js
+* 🧨 add rollup eslint babel
+* 🧨 紧急修复 api被网易限制
+
+### Features
+
+* 🎸 add rollup eslint babel ([09bcc1c](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/09bcc1c60a06137ddb7c0dcc7c6ebc5e60058e73))
+* 🎸 eslintrc.js ([03e1528](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/03e152885817b14c57e5f0f1ee96f12da069800e))
+
+
+### Bug Fixes
+
+* 🐛 紧急修复 api被网易限制 ([94fc6c5](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/94fc6c5a2a5b0e2782b6305f07c063af3d41921b))
+
 ### [1.0.6](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.4...v1.0.6) (2022-02-16)
 
 
