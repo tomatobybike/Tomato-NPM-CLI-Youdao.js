@@ -11,8 +11,8 @@ const chalk = require('chalk')
 const conf = new Configstore('youdaoTom')
 
 const DEFAULT_API_KEYS = {
-    key: 969918857,
-    keyfrom: 'neverland'
+    key: 868480929,
+    keyfrom: 'toaijf'
 }
 
 const key = conf.get('key') || DEFAULT_API_KEYS.key
