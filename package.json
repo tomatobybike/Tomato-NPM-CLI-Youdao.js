@@ -24,6 +24,7 @@
         "youdaotom": "./bin/www"
     },
     "scripts": {
+        "babelnode": "npx babel-node ./src/youdao.js",
         "build": "NODE_ENV=production rollup -c",
         "build:dev": "NODE_ENV=development rollup -c",
         "build:prod": "NODE_ENV=production rollup -c",
@@ -31,7 +32,7 @@
         "lint:fix": "eslint --ext .js src ./ --fix",
         "prerelease": "yarn run build",
         "release": "standard-version patch",
-        "start": "npx babel-node ./src/youdao.js",
+        "start": "yarn run sucrase",
         "sucrase": "sucrase-node ./src/youdao.js"
     },
     "dependencies": {
