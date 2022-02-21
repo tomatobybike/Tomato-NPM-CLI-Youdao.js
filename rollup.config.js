@@ -1,9 +1,11 @@
+import { babel } from '@rollup/plugin-babel'
+import commonjs from '@rollup/plugin-commonjs'
 import eslint from '@rollup/plugin-eslint'
-import babel from 'rollup-plugin-babel'
+import json from '@rollup/plugin-json'
+// import nodeResolve from '@rollup/plugin-node-resolve'
+import replace from '@rollup/plugin-replace'
 import clear from 'rollup-plugin-clear'
-import commonjs from 'rollup-plugin-commonjs'
 import prettier from 'rollup-plugin-prettier'
-import replace from 'rollup-plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 
 const env = process.env.NODE_ENV
@@ -11,21 +13,23 @@ const env = process.env.NODE_ENV
 const plugins = [
     clear({ targets: ['dist'] }),
     prettier({ sourcemap: false, parser: 'babel' }),
-    babel({
-        exclude: ['node_modules/**']
-    }),
-    commonjs({
-        include: ['node_modules/**']
-    }),
     eslint({
         include: ['./src'],
         fix: true,
         throwOnError: true
     }),
     replace({
+        preventAssignment: true,
         'process.env.NODE_ENV': JSON.stringify(env),
         delimiters: ['', ''],
         '#!/usr/bin/env node': ''
+    }),
+    commonjs({
+        include: []
+    }),
+    json(),
+    babel({
+        exclude: ['node_modules/**']
     }),
     env === 'production' && terser()
 ]

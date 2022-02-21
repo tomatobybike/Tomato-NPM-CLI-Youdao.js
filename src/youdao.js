@@ -1,12 +1,13 @@
 // #!/usr/bin/env node
 // 命令行有道翻译
-const { program } = require('commander')
-const Table = require('cli-table2') // 表格输出
-const superagent = require('superagent') // http请求
-const Printer = require('@darkobits/lolcatjs')
-const figlet = require('figlet')
-const Configstore = require('configstore')
-const chalk = require('chalk')
+// http请求
+import Printer from '@darkobits/lolcatjs'
+import chalk from 'chalk'
+import Table from 'cli-table2/src/table'
+import { program } from 'commander'
+import Configstore from 'configstore'
+import figlet from 'figlet'
+import superagent from 'superagent'
 
 const conf = new Configstore('youdaoTom')
 
