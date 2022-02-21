@@ -1,6 +1,6 @@
 {
     "name": "youdaotom",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
@@ -29,6 +29,7 @@
         "build:prod": "NODE_ENV=production rollup -c",
         "lint": "eslint ./src",
         "lint:fix": "eslint --ext .js src ./ --fix",
+        "prerelease": "yarn run build",
         "release": "standard-version",
         "start": "node ./src/youdao.js"
     },
@@ -46,7 +47,6 @@
     "devDependencies": {
         "@babel/core": "^7.17.5",
         "@babel/preset-env": "^7.16.11",
-        "@babel/preset-react": "^7.16.7",
         "@rollup/plugin-babel": "^5.3.0",
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-eslint": "^8.0.1",
