@@ -2,27 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [3.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.1.0...v3.0.0) (2022-02-21)
-
-
-### ⚠ BREAKING CHANGES
-
-* 🧨 增加 sucrase和 babel-node 运行es6 import/export
-
-### Features
-
-* 🎸 增加 sucrase和 babel-node 运行es6 import/export ([e3b1aca](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/e3b1aca06ae8dde4aab26b1c394f5b8126acd111))
-
-## [2.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.1.0...v2.0.0) (2022-02-21)
-
-
-### ⚠ BREAKING CHANGES
-
-* 🧨 增加 sucrase和 babel-node 运行es6 import/export
-
-### Features
-
-* 🎸 增加 sucrase和 babel-node 运行es6 import/export ([e3b1aca](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/e3b1aca06ae8dde4aab26b1c394f5b8126acd111))
+### [3.0.1](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v3.0.0...v3.0.1) (2022-02-21)
 
 ### [1.0.8](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.7...v1.0.8) (2022-02-20)
 
