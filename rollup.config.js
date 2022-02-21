@@ -43,5 +43,14 @@ export default {
             sourcemap: true
         }
     ],
+    external: [
+        '@darkobits/lolcatjs',
+        'chalk',
+        'cli-table2/src/table',
+        'commander',
+        'configstore',
+        'figlet',
+        'superagent'
+    ],
     plugins
 }
