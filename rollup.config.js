@@ -34,23 +34,39 @@ const plugins = [
     env === 'production' && terser()
 ]
 
-export default {
-    input: 'src/youdao.js',
-    output: [
-        {
-            file: 'dist/youdao.js',
-            format: 'cjs',
-            sourcemap: true
-        }
-    ],
-    external: [
-        '@darkobits/lolcatjs',
-        'chalk',
-        'cli-table2/src/table',
-        'commander',
-        'configstore',
-        'figlet',
-        'superagent'
-    ],
-    plugins
-}
+const external = [
+    '@darkobits/lolcatjs',
+    'chalk',
+    'cli-table2/src/table',
+    'commander',
+    'configstore',
+    'figlet',
+    'superagent'
+]
+
+export default [
+    {
+        input: 'src/youdao.js',
+        output: [
+            {
+                file: 'dist/youdao.js',
+                format: 'cjs',
+                sourcemap: true
+            }
+        ],
+        external,
+        plugins
+    },
+    {
+        input: 'src/youdao2.js',
+        output: [
+            {
+                file: 'dist/youdao2.js',
+                format: 'cjs',
+                sourcemap: true
+            }
+        ],
+        external,
+        plugins
+    }
+]
