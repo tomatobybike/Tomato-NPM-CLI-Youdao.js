@@ -1,6 +1,9 @@
 // #!/usr/bin/env node
 // 命令行有道翻译
 // http请求
+// const packages = require('../package.json')
+// const { version: VERSION } = packages
+import { version as VERSION } from '../package.json'
 import Printer from '@darkobits/lolcatjs'
 import chalk from 'chalk'
 import Table from 'cli-table2/src/table'
@@ -19,9 +22,6 @@ const DEFAULT_API_KEYS = {
 const key = conf.get('key') || DEFAULT_API_KEYS.key
 const keyfrom = conf.get('keyfrom') || DEFAULT_API_KEYS.keyfrom
 
-const packages = require('../package.json')
-
-const { version: VERSION } = packages
 const logo = figlet.textSync('Youdao')
 const logoPrinter = Printer.fromString(
     `\n=========================================   \n 汤姆的youdao翻译${VERSION}\n\n${logo}\n=========================================`
