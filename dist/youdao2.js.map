@@ -1,1 +1,1 @@
-{"version":3,"file":"youdao2.js","sources":["../src/youdao2.js"],"sourcesContent":["console.log('hello')\n"],"names":["console","log"],"mappings":"aAAAA,QAAQC,IAAI"}
+{"version":3,"file":"youdao2.js","sources":["../src/youdao2.js"],"sourcesContent":["console.log('hello youdaotom2')\n"],"names":["console","log"],"mappings":"aAAAA,QAAQC,IAAI"}

@@ -1,6 +1,6 @@
 {
     "name": "youdaotom",
-    "version": "2.0.0",
+    "version": "1.0.9",
     "description": "youdao translate, 翻译 命令行",
     "keywords": [
         "translate",
@@ -22,7 +22,7 @@
     "main": "./src/youdao.js",
     "bin": {
         "youdaotom": "./bin/youdaotom",
-        "youdaotom2": "./bin/youdao2"
+				"youdaotom2": "./bin/youdao2"
     },
     "scripts": {
         "babelnode": "npx babel-node ./src/youdao.js",
@@ -32,7 +32,7 @@
         "lint": "eslint ./src",
         "lint:fix": "eslint --ext .js src ./ --fix",
         "prerelease": "yarn run build",
-        "release": "standard-version minor",
+        "release": "standard-version patch",
         "start": "yarn run sucrase",
         "sucrase": "sucrase-node ./src/youdao.js"
     },
