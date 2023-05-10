@@ -22,7 +22,7 @@
     "main": "./src/youdao.js",
     "bin": {
         "youdaotom": "./bin/youdaotom",
-        "youdaotom2": "./bin/youdao2"
+        "youdaotom2": "./bin/youdaotom2"
     },
     "scripts": {
         "babelnode": "npx babel-node ./src/youdao.js",
