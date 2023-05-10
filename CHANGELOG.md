@@ -2,14 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.1.3](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.1.2...v1.1.3) (2022-06-30)
-
-
-### Features
-
-* 🎸 release 1.1.2 ([5ce4d05](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/5ce4d05c13fd495207141b9ea8a1f2bc27667257))
-
-### [1.1.2](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.9...v1.1.2) (2022-06-30)
+## [2.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.9...v2.0.0) (2023-05-10)
 
 
 ### ⚠ BREAKING CHANGES
@@ -21,26 +14,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 * 🎸 增加youdaotom2配置 ([8f8c0b3](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/8f8c0b387294ac8e6d141b3915e8a6d82522d9f2))
 * 🎸 add rollup external ([b2f023e](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/b2f023ea1054b108ef6f6d9882ead470eddc3657))
-* 🎸 change bin ([49ff941](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/49ff94153a8a08b4769d6342b5ae3398d8db1770))
-* 🎸 change bin ([36d8d1f](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/36d8d1f9586a1dd9da225fffe621c26d12c2c8d8))
-* 🎸 change npm script sucrase quick run nodejs ([30b5e5e](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/30b5e5e7c7326d2ac255e99d14e92309017b6671))
-* 🎸 json ([fa17593](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/fa1759384f1c3704a5a229359af9d9bd8b15f6d3))
-* 🎸 ver ([7eb3066](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/7eb306662eb2889f4c4db5b24b08c5ec36f53714))
-* 🎸 youdaotom2 ([214b534](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/214b5346b11ebd0a48373e076bbc3308b33115ac))
-
-## [2.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.9...v2.0.0) (2022-02-28)
-
-
-### ⚠ BREAKING CHANGES
-
-* 🧨 增加youdaotom2
-* 🧨 add rollup external
-
-### Features
-
-* 🎸 增加youdaotom2配置 ([8f8c0b3](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/8f8c0b387294ac8e6d141b3915e8a6d82522d9f2))
-* 🎸 add rollup external ([b2f023e](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/b2f023ea1054b108ef6f6d9882ead470eddc3657))
-* 🎸 change bin ([36d8d1f](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/36d8d1f9586a1dd9da225fffe621c26d12c2c8d8))
 * 🎸 change npm script sucrase quick run nodejs ([30b5e5e](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/30b5e5e7c7326d2ac255e99d14e92309017b6671))
 * 🎸 json ([fa17593](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/commit/fa1759384f1c3704a5a229359af9d9bd8b15f6d3))
 
