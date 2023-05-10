@@ -21,7 +21,7 @@
     "author": "Tom <tomatobybike@gmail.com>",
     "main": "./src/youdao.js",
     "bin": {
-        "youdaotom": "./bin/www",
+        "youdaotom": "./bin/youdaotom",
         "youdaotom2": "./bin/youdao2"
     },
     "scripts": {
