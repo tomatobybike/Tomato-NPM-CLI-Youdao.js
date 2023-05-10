@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [2.0.0](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.9...v2.0.0) (2023-05-10)
+### [1.1.4](https://github.com/tomatobybike/Tomato-NPM-CLI-Youdao.js/compare/v1.0.9...v1.1.4) (2023-05-10)
 
 
 ### ⚠ BREAKING CHANGES
